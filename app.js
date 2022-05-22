@@ -40,14 +40,14 @@ const tlH = gsap.timeline({
 const tlSplit = gsap.timeline({
     scrollTrigger: {
       trigger: ".third-page",
-      start: "-25%",
-      end: "30%",
+      start: "-35%",
+      end: "5%",
       scrub: true,
     },
   });
   
   tlSplit.fromTo(".large-phone", { x: "40%" }, { x: "20%" });
-  tlSplit.fromTo(".small-phone", { x: "-40%" }, { x: "-20%" }, "<");
+  tlSplit.fromTo(".small-phone", { x: "-40%" }, { x: "-30%" }, "<");
   tlSplit.fromTo(
     ".product-text-left",
     { x: 50, opacity: 0 },
@@ -57,7 +57,7 @@ const tlSplit = gsap.timeline({
   tlSplit.fromTo(
     ".product-text-right",
     { x: -50, opacity: 0 },
-    { opacity: 1, x: 60 },
+    { opacity: 1, x: 170 },
     "<"
   );
   

@@ -4,13 +4,18 @@
   box-sizing: border-box;
   font-family: 'Mukta', sans-serif;
 }
+
+body {
+  background: #1d1d1d;
+}
+
 a,
 button,
 h1,
 h2,
 h3,
 h4 {
-  color: rgb(40, 40, 40);
+  color: #ffffff;
 }
 nav {
   position: fixed;
@@ -20,14 +25,14 @@ nav {
   justify-content: space-between;
   padding: 0% 20%;
   min-height: 8vh;
-  background: rgba(255, 255, 255, 0.6);
+  background: #1d1d1d;
   backdrop-filter: blur(10px);
   z-index: 10;
 }
 nav,
 a {
   text-decoration: none;
-  color: black;
+  color: #ffffff;
   font-size: 0.9rem;
 }
 .nav-links a,
@@ -35,14 +40,14 @@ a {
   margin-left: 2rem;
 }
 .logo {
-  font-size: 1rem;
-  font-weight: bold;
+  max-height: 40px;
+  width: auto;
 }
 .buy-button {
   padding: 0.2rem 2rem;
   font-size: 0.6rem;
-  color: white;
-  background: #3056f5;
+  color: #ffffff;
+  background: #ff7900;
   border: none;
   border-radius: 1rem;
   cursor: pointer;
@@ -64,10 +69,18 @@ a {
   padding-bottom: 10rem;
 }
 .first-page-title {
-  font-size: 1.5rem;
+  font-size: 3rem;
+  color: #ffffff;
+  font-weight: 800;
+  text-transform: uppercase;
+  letter-spacing: 0.7rem;
 }
 .first-page-subtitle {
   font-size: 3rem;
+  color: #ff7900;
+  font-weight: 800;
+  text-transform: uppercase;
+  letter-spacing: 0.9rem;
 }
 
 .intro-video {
@@ -78,7 +91,6 @@ a {
 /* Second Page */
 .second-page {
   min-height: 125vh;
-  color: rgba(255, 255, 255, 0.6);
   display: flex;
   flex-direction: column;
   position: relative;
@@ -111,7 +123,6 @@ a {
   justify-content: space-around;
   align-items: center;
   min-height: 100vh;
-  background: white;
 }
 .phone-size {
   font-size: 2rem;
@@ -119,9 +130,14 @@ a {
 }
 .pro-size {
   text-align: right;
+  color: #ff7900;
 }
 .max-size {
   text-align: left;
+  color: #ff7900;
+}
+.phone-title{
+  color: #ffffff;
 }
 .product-images {
   position: absolute;
@@ -133,19 +149,13 @@ a {
   position: relative;
   transform: translateX(40%) scale(0.8);
   z-index: 1;
+  width: auto;
 }
 .small-phone {
   position: relative;
   z-index: 2;
-  transform: translateX(-40%) scale(0.8);
-}
-.retina-line {
-  position: absolute;
-  bottom: 15%;
-  left: 50%;
-  transform: translate(-50%, -15%);
-  font-size: 0.8rem;
-  font-weight: bold;
+  transform: translateX(40%) scale(0.8);
+  width: auto;
 }
 
 /* 4th Page Video to be added */
@@ -164,7 +174,6 @@ a {
 .product-info-container {
   position: relative;
   z-index: 2;
-  color: white;
   display: flex;
   align-items: center;
   min-height: 100vh;
@@ -178,12 +187,10 @@ a {
 .left-info h3,
 .right-info h3 {
   padding: 3rem 0rem;
-  color: rgb(193, 193, 193);
 }
 .left-info span,
 .right-info span {
   font-size: 1.5rem;
-  color: rgb(210, 210, 210);
 }
 .blue {
   z-index: 1;
@@ -205,6 +212,8 @@ a {
 }
 .photo-subtitle {
   font-size: 4rem;
+  color: #ff7900;
+  font-weight: 800;
 }
 .phone-video {
   position: absolute;
@@ -224,8 +233,8 @@ a {
   transform: scale(0.8);
 }
 .phone-video video {
-  left: 1rem;
-  bottom: 1rem;
-  transform: scale(0.82);
-  border-radius: 2rem;
+  left: -14.89rem;
+  bottom: -28.5rem;
+  transform: scale(0.326);
+  border-radius: 5rem;
 }
