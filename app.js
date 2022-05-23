@@ -51,13 +51,13 @@ const tlSplit = gsap.timeline({
   tlSplit.fromTo(
     ".product-text-left",
     { x: 50, opacity: 0 },
-    { opacity: 1, x: -60 },
+    { opacity: 1, x: -140 },
     "<"
   );
   tlSplit.fromTo(
     ".product-text-right",
     { x: -50, opacity: 0 },
-    { opacity: 1, x: 170 },
+    { opacity: 1, x: 160 },
     "<"
   );
   
@@ -71,28 +71,16 @@ const tlSplit = gsap.timeline({
     },
   });
 
-//Page 5 video on scroll
+//Page 5
 const tlVideo = gsap.timeline({
     scrollTrigger: {
       trigger: ".fifth-page",
       start: "0%",
-      end: "150%",
+      end: "0%",
       scrub: true,
       pin: true,
     },
   });
-  tlVideo.fromTo(
-    ".product-video",
-    { currentTime: 0 },
-    { currentTime: 3, duration: 1 }
-  );
-  
-  tlVideo.fromTo(
-    ".product-info-container h3",
-    { opacity: 0 },
-    { opacity: 1, stagger: 0.25, duration: 0.5 },
-    "<"
-  );
 
 //6th Page
 const tlParallax = gsap.timeline({
