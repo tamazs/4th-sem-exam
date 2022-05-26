@@ -510,6 +510,7 @@ text-decoration: none;
   .third-page {
     position: relative;
     padding: 0% 5%;
+    overflow-x: hidden;
   }
   
   .info-number {
@@ -691,7 +692,7 @@ text-decoration: none;
   .phone-video {
     position: absolute;
     bottom: 0;
-    left: 6%;
+    left: 20%;
     z-index: 2;
     transform: translate(-40%, 0%);
   }
