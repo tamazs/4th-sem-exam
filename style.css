@@ -30,7 +30,6 @@ nav {
   padding: 0% 20%;
   min-height: 8vh;
   background: #1d1d1d;
-  backdrop-filter: blur(10px);
   z-index: 10;
 }
 nav,
@@ -164,7 +163,7 @@ a {
   height: 500px;
 }
 
-/* 4th Page Video to be added */
+/* 4th Page Video */
 .fourth-page {
   min-height: 100vh;
   background: #1d1d1d;
@@ -420,4 +419,303 @@ text-decoration: none;
   text-transform: uppercase;
   opacity: .4;
   font-weight: 200;
+}
+
+@media only screen and (max-width: 688px) {
+  nav {
+    position: fixed;
+    width: 100vw;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0% 5%;
+    min-height: 8vh;
+    background: #1d1d1d;
+    backdrop-filter: blur(10px);
+    z-index: 10;
+  }
+
+  nav,
+  a {
+    text-decoration: none;
+    color: #ffffff;
+    font-size: 16px;
+  }
+  .nav-links a,
+  .nav-links button {
+    margin-left: 1rem;
+  }
+  .logo {
+    max-height: 29px;
+    width: auto;
+  }
+
+  .cta-button {
+    padding: 0.2rem 0.4rem;
+    font-size: 12px;
+    color: #ffffff;
+    background: #ff7900;
+    border: none;
+    border-radius: 1rem;
+    cursor: pointer;
+  }
+
+  /*  First page mobile */
+  .first-page {
+    min-height: 100vh;
+    padding: 0 5%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100vw;
+  }
+  .first-page-text {
+    z-index: 2;
+    text-align: center;
+    padding-bottom: 5rem;
+  }
+  .first-page-title {
+    font-size: 2rem;
+    color: #ffffff;
+    font-weight: 800;
+    text-transform: uppercase;
+    letter-spacing: 0.7rem;
+  }
+  .first-page-subtitle {
+    font-size: 2rem;
+    color: #ff7900;
+    font-weight: 800;
+    text-transform: uppercase;
+    letter-spacing: 0.9rem;
+  }
+  
+  .intro-video {
+    position: absolute;
+    width: 100vw;
+    height: 100vh;
+    object-fit: cover;
+  }
+
+  /*  Second page mobile */
+  .second-text {
+    padding: 5% 10%;
+    position: relative;
+    font-size: 2rem;
+    font-weight: bold;
+    z-index: 2;
+  }
+
+  /*  Third page mobile */
+  .third-page {
+    position: relative;
+    padding: 0% 5%;
+  }
+  
+  .info-number {
+    font-size: 1rem;
+    font-weight: bold;
+  }
+
+  .info-images {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+  .wreck-pic {
+    position: relative;
+    transform: translateX(-30%) translateY(20%) scale(1);
+    z-index: 1;
+    width: auto;
+    height: 400px;
+  }
+  .oil-pic {
+    position: relative;
+    z-index: 2;
+    transform: translateX(-30%) translateY(-40%) scale(1);
+    width: auto;
+    height: 300px;
+  }
+
+  .info-text-left, .info-text-right {
+    display: none;
+  }
+
+  /* 4th Page Video */
+  .fourth-page {
+    min-height: 70vh;
+    background: #1d1d1d;
+    padding: 5% 5%;
+  }
+
+  .movie-embed {
+    width: 100%;
+    height: 100%;
+    z-index: 4;
+  }
+/* 5th Page */
+.fifth-page {
+  min-height: 250vh;
+  display: flex;
+  flex-direction: column;
+  background: #1d1d1d;
+  padding: 5% 5%;
+}
+
+.missiontitle {
+  color: #ff7900;
+  text-transform: uppercase;
+  font-size: 2rem;
+  font-weight: 800;
+  text-align: center;
+}
+
+.missiontext {
+  color: #ffffff;
+  text-align: center;
+}
+
+.card-container1 {
+  height: auto;
+  width: auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  margin: 0;
+  background: #1d1d1d;
+}
+.card-container2 {
+  height: auto;
+  width: auto;
+  flex-direction: column;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 0;
+  background: #1d1d1d;
+}
+.border {
+  height: 369px;
+  width: 290px;
+  background: transparent;
+  border-radius: 10px;
+  transition: border 1s;
+  position: relative;
+}
+.border:hover {
+  border: 1px solid #ffffff;
+}
+.card {
+  height: auto;
+  width: 300px;
+  border-radius: 10px;
+  transition: background 0.8s;
+  overflow: hidden;
+  box-shadow: 0 70px 63px -60px #000;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  margin-top: 60px;
+}
+.card0 {
+  background: url("./images/bendi.png") center center no-repeat;
+  background-size: 400px;
+}
+.card0:hover {
+  background: url("./images/bendi.png") left center no-repeat;
+  background-size: 500px;
+}
+.card0:hover h2 {
+  opacity: 1;
+}
+.card1 {
+  background: url("./images/ines.png") center center no-repeat;
+  background-size: 400px;
+}
+.card1:hover {
+  background: url("./images/ines.png") left center no-repeat;
+  background-size: 500px;
+}
+.card1:hover h2 {
+  opacity: 1;
+}
+.card2 {
+  background: url("./images/oli.png") center center no-repeat;
+  background-size: 400px;
+}
+.card2:hover {
+  background: url("./images/oli.png") left center no-repeat;
+  background-size: 500px;
+}
+.card2:hover h2 {
+  opacity: 1;
+}
+.card3 {
+  background: url("./images/tamas.png") center center no-repeat;
+  background-size: 400px;
+}
+.card3:hover {
+  background: url("./images/tamas.png") left center no-repeat;
+  background-size: 500px;
+}
+.card3:hover h2 {
+  opacity: 1;
+}
+.cardname {
+  color: #1d1d1d;
+  margin: 20px;
+  opacity: 0;
+  transition: opacity 1s;
+}
+
+  /*  Sixth page */
+  .sixth-page {
+    min-height: 100vh;
+    padding: 20% 5%;
+    justify-content: space-between;
+    position: relative;
+    display: flex;
+  }
+  .parallaxpic {
+    height: 50vh;
+    z-index: 1;
+    width: 45vw;
+    object-fit: cover;
+  }
+  .article-title {
+    font-size: 2rem;
+  }
+  .phone-video {
+    position: absolute;
+    bottom: 0;
+    left: 6%;
+    z-index: 2;
+    transform: translate(-40%, 0%);
+  }
+  .phone-video img,
+  .phone-video video {
+    position: absolute;
+  }
+  .phone-video img {
+    z-index: 2;
+    bottom: 0;
+    left: 0;
+    transform: scale(0.6);
+  }
+  .phone-video video {
+    left: -14.89rem;
+    bottom: -28.5rem;
+    transform: scale(0.243);
+    border-radius: 5rem;
+  }
+
+  .logoarticle {
+    max-height: 40px;
+    width: auto;
+    padding-top: 5px;
+    cursor: pointer;
+  }
 }
