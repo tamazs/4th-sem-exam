@@ -46,16 +46,16 @@ const tlSplit = gsap.timeline({
     },
   });
   
-  tlSplit.fromTo(".large-phone", { x: "40%" }, { x: "20%" });
-  tlSplit.fromTo(".small-phone", { x: "-40%" }, { x: "-30%" }, "<");
+  tlSplit.fromTo(".wreck-pic", { x: "40%" }, { x: "20%" });
+  tlSplit.fromTo(".oil-pic", { x: "-40%" }, { x: "-30%" }, "<");
   tlSplit.fromTo(
-    ".product-text-left",
+    ".info-text-left",
     { x: 50, opacity: 0 },
     { opacity: 1, x: -140 },
     "<"
   );
   tlSplit.fromTo(
-    ".product-text-right",
+    ".info-text-right",
     { x: -50, opacity: 0 },
     { opacity: 1, x: 160 },
     "<"
@@ -71,8 +71,20 @@ const tlSplit = gsap.timeline({
     },
   });
 
+//Page 4
+
+const tlMoviePin = gsap.timeline({
+  scrollTrigger: {
+    trigger: ".fourth-page",
+    pin: true,
+    pinSpacing: false,
+    start: "0%",
+    end: "100%",
+  },
+});
+
 //Page 5
-const tlVideo = gsap.timeline({
+const tlMission = gsap.timeline({
     scrollTrigger: {
       trigger: ".fifth-page",
       start: "0%",
@@ -92,7 +104,7 @@ const tlParallax = gsap.timeline({
     },
   });
   
-  tlParallax.fromTo(".photo-description", { y: 0 }, { y: -80 });
-  tlParallax.fromTo(".portrait-container", { y: 0 }, { y: -80 }, "<");
+  tlParallax.fromTo(".article-description", { y: 0 }, { y: -80 });
+  tlParallax.fromTo(".article-container", { y: 0 }, { y: -80 }, "<");
   tlParallax.fromTo(".phone-video", { y: 0 }, { y: -200 }, "<");
   
